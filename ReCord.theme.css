@@ -1,136 +1,136 @@
-//META{"name":"ReCord","description":"Eject theme","author":"@eject37","version":"1.0"}*//
+//META{"name":"ReCord","description":"Eject theme","author":"@eject37","version":"1.1"}*//
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
 :root {
-	--main-color: #1a2026;
-	--additional-color: #1f262d;
-	--voice-color: #11171d;
-	--button-color: linear-gradient(90deg, #263341, #273039);
-	--blue-color-text: #7ecff5;
-	--hover-color: #2a3742;
-	--link-color: #7daae9;
-	--checkbox-cheked-color: #23588b;
+    --main-color: #1a2026;
+    --additional-color: #1f262d;
+    --voice-color: #11171d;
+    --button-color: linear-gradient(90deg, #263341, #273039);
+    --blue-color-text: #7ecff5;
+    --hover-color: #2a3742;
+    --link-color: #7daae9;
+    --checkbox-cheked-color: #23588b;
 }
 
 button[aria-label="Начать активность"],
 button[aria-label="Камера недоступна"],
 button[aria-label="Шумоподавление с помощью Krisp"],
-[role=button][aria-label="Показать профиль пользователя (недоступно)"],
-[role=button][aria-label="Почта"],
-[role=button][aria-label="Помощь"],
+[role="button"][aria-label="Показать профиль пользователя (недоступно)"],
+[role="button"][aria-label="Почта"],
+[role="button"][aria-label="Помощь"],
 div:has(> button[aria-label="Открыть звуковую панель"]),
 div:has(> span[class*="disabledButtonWrapper-1m0hYZ"]),
-[role=button][aria-label="Начать видеозвонок"] {
-	display: none;
+[role="button"][aria-label="Начать видеозвонок"] {
+    display: none;
 }
 
 button[aria-label="Продемонстрируйте свой экран"] {
-	background: var(--button-color);
+    background: var(--button-color);
 }
 
 .buttonContainer-1sjtPU {
-	display: none;
+    display: none;
 }
 
 .controlButton-2PMNom.fauxDisabled-VBw6wH.contextMenuContainer-1RO4DQ {
-	display: none;
+    display: none;
 }
 
-.scroller-3X7KbA>.listItem-3SmSlK>.listItemWrapper-3d87LP {
-	display: none;
+.scroller-3X7KbA > .listItem-3SmSlK > .listItemWrapper-3d87LP {
+    display: none;
 }
 
-.children-3xh0VB>.akaBadge-3i7V3p,
-.children-3xh0VB>.nicknames-10Sg6e,
-.children-3xh0VB>.divider-q3P9HC {
-	display: none;
+.children-3xh0VB > .akaBadge-3i7V3p,
+.children-3xh0VB > .nicknames-10Sg6e,
+.children-3xh0VB > .divider-q3P9HC {
+    display: none;
 }
 
 .withFrame-2dL45i {
-	height: 22px;
-	margin-top: 0;
-	background-color: var(--main-color) !important;
+    height: 22px;
+    margin-top: 0;
+    background-color: var(--main-color) !important;
 }
 
-[role=button][aria-label="Свернуть"],
-[role=button][aria-label="Развернуть"],
-[role=button][aria-label="Закрыть"] {
-	padding-top: 3px;
-}
+/*[role="button"][aria-label="Свернуть"],
+[role="button"][aria-label="Развернуть"],
+[role="button"][aria-label="Закрыть"] {
+    padding-top: 3px;
+}*/
 
 .scroller-3X7KbA,
 .theme-dark .panel-2ZFCRb,
 .chatContent-3KubbW {
-	background: var(--main-color);
+    background: var(--main-color);
 }
 
 .root-22AK9z {
-	background: var(--voice-color);
+    background: var(--voice-color);
 }
 
 .container-YkUktl,
 .container-1zzFcN {
-	background: var(--main-color) !important;
+    background: var(--main-color) !important;
 }
 
 .scroller-WSmht3,
 .searchBar-3TnChZ {
-	background: var(--additional-color) !important;
+    background: var(--additional-color) !important;
 }
 
 .searchBarComponent-3N7dCG,
 .searchBar-jGtisZ {
-	background: var(--main-color) !important;
+    background: var(--main-color) !important;
 }
 
-[data-list-id=chat-messages],
+[data-list-id="chat-messages"],
 .form-3gdLxP:before,
 .form-3gdLxP {
-	background: var(--main-color) !important;
+    background: var(--main-color) !important;
 }
 
 .placeholder-1rCBhr,
 .scrollableContainer-15eg7h {
-	background: var(--additional-color);
+    background: var(--additional-color);
 }
 
 .themed-Hp1KC_,
 .children-3xh0VB:after {
-	background: var(--additional-color) !important;
+    background: var(--additional-color) !important;
 }
 
 .members-3WRCEx {
-	background: var(--additional-color);
+    background: var(--additional-color);
 }
 
 /* Скролл-бар */
 ::-webkit-scrollbar {
-	border: 0px !important;
-	width: 9px !important;
+    border: 0px !important;
+    width: 9px !important;
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: rgb(186, 186, 189) !important;
+    background-color: rgb(186, 186, 189) !important;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background-color: rgb(157, 157, 160) !important;
+    background-color: rgb(157, 157, 160) !important;
 }
 
 .auto-2TJ1RH::-webkit-scrollbar-track {
-	background-color: #151b21;
+    background-color: #151b21;
 }
 
 .auto-2TJ1RH::-webkit-scrollbar-thumb,
 .auto-2TJ1RH::-webkit-scrollbar-track {
-	border: 4px;
+    border: 4px;
 }
 
 /* Скролл-бар КОНЕЦ */
 
 .selected-26oxtA {
-	background: #323b46;
+    background: #323b46;
 }
 
 /* Список сообщений, серверов, пользователей при наведении */
@@ -138,33 +138,33 @@ button[aria-label="Продемонстрируйте свой экран"] {
 .wrapper-NhbLHG:hover .content-1gYQeQ,
 .clickable-28SzVr:hover .layout-1qmrhw,
 .button-3bklZh:hover {
-	background: #252c35;
-	transition: 0.3s;
+    background: #252c35;
+    transition: 0.3s;
 }
 
 /* Выбранные Список сообщений, серверов, пользователей */
 .modeSelected-3DmyhH .content-1gYQeQ,
 .button-3bklZh.selected-69H4ua {
-	background: #323b46 !important;
+    background: #323b46 !important;
 }
 
 /* Кнопка на главный экран */
-.childWrapper-1j_1ub {
-	background: #3c4d62 !important;
-}
+/* .childWrapper-1j_1ub {
+    background: #3c4d62 !important;
+} */
 
 .theme-dark .container-1NXEtd,
 .container-2o3qEW {
-	background: var(--additional-color);
+    background: var(--additional-color);
 }
 
 /* Если тебя тегнули */
 .mentioned-Tre-dv {
-	background: #7789ab2e !important;
+    background: #7789ab2e !important;
 }
 
 .mentioned-Tre-dv:before {
-	background-color: #4b7c97;
+    background-color: #4b7c97;
 }
 
 /* Кнопка В эфире */
@@ -175,12 +175,12 @@ button[aria-label="Продемонстрируйте свой экран"] {
 /* Кнопка выключения просмотра демонстрации экрана и кнопка Отключиться */
 button[aria-label="Прекратить просмотр"],
 .colorable-3rVGna.red-3T8maV {
-	background: var(--button-color) !important;
+    background: var(--button-color) !important;
 }
 
+/* Цвет строки поиска в вкладке Друзья */
 .inner-2pOSmK {
-	/* Цвет строки поиска в вкладке Друзья */
-	background: #323b46;
+    background: #323b46;
 }
 
 /* Загружаемые файлы и разные фоны в сообщениях */
@@ -190,61 +190,62 @@ button[aria-label="Прекратить просмотр"],
 .newMosaicStyle-2jdUaP .textContainer-36wgKK,
 .grid-1aWVsE,
 .wrapper-2vIMkT {
-	background: var(--button-color);
+    background: var(--button-color);
 }
 
 /* Кнопка + (зайти на сервер) */
-.circleIcon-3489FI>path {
-	fill: var(--blue-color-text)
+.circleIcon-3489FI > path {
+    fill: var(--blue-color-text);
 }
 
 .circleIconButton-1VxDrg {
-	background: var(--button-color);
+    background: var(--button-color);
 }
 
 /* Отображение цвета разговора */
 .border-2Vy6FN.speaking-7QZEkv,
 .border-2BJQjd.speaking-3RWJBr,
 .speaking-3K28iH,
+.speaking-1Q5elM,
 .avatarSpeaking-36V2PN {
-	box-shadow: inset 0 0 10px var(--blue-color-text);
+    box-shadow: inset 0 0 10px rgb(140, 140, 140);
 }
 
 /* Меню настроек */
 .sidebarRegionScroller-FXiQOh,
 .contentRegionShownSidebar-fHXkEg {
-	/*background: radial-gradient(black, #010918c4) !important;*/
-	background: var(--main-color) !important;
+    /*background: radial-gradient(black, #010918c4) !important;*/
+    background: var(--main-color) !important;
 }
 
 .container-1QtPKm.checked-16gMAN,
-.bd-switch input:checked+.bd-switch-body {
-	background-color: var(--checkbox-cheked-color) !important;
+.bd-switch input:checked + .bd-switch-body {
+    background-color: var(--checkbox-cheked-color) !important;
 }
 
 .bd-switch-symbol,
-.slider-HJFN2i>svg {
-	display: none;
+.slider-HJFN2i > svg {
+    display: none;
 }
 
 /* Зеленый значок показывающий нахождение в голосовом канале */
 .iconBadge-32fMme {
-	background-color: rgb(68, 74, 88) !important;
+    background-color: rgb(68, 74, 88) !important;
 }
 
 /* Правая панель серверов */
 .member-48YF_l {
-	background: #ff000000;
+    background: #ff000000;
 }
 
 /* Профили */
 .overlayBackground-2aa7wt {
-	background-color: var(--main-color);
+    background-color: var(--main-color);
 }
 
 .userProfileInner-1ngKnf:before,
 .userProfileInnerThemedNonPremium-2AJg-H {
-	background: var(--additional-color);
+    background: var(--additional-color);
 }
 
 /* Шрифт */
@@ -252,77 +253,84 @@ button[aria-label="Прекратить просмотр"],
 :root:lang(el),
 :root:lang(ru),
 :root:lang(uk) {
-	--font-primary: "Montserrat", Arial, sans-serif;
-	--font-display: "Montserrat", Arial, sans-serif;
-	--font-headline: "Montserrat", Arial, sans-serif;
+    --font-primary: "Montserrat", Arial, sans-serif;
+    --font-display: "Montserrat", Arial, sans-serif;
+    --font-headline: "Montserrat", Arial, sans-serif;
 }
 
 /* Разные подсказки при наведении */
 
 .theme-dark {
-	/* Цвет контекстного меню */
-	--background-floating: var(--additional-color);
-	/* Цвет ссылок */
-	--text-link: var(--link-color);
-	/* Цвет голосовых сообщений */
-	--background-secondary: var(--additional-color);
-	/* Цвет в закрепах и тд */
-	--background-primary: var(--main-color);
-	/* Цвет бейджей важных сообщений */
-	--status-danger: #3d78c4;
-	/* Цвет экрана выбора демки */
-	--modal-background: var(--main-color);
-	--modal-footer-background: var(--additional-color);
+    /* Цвет контекстного меню */
+    --background-floating: var(--additional-color);
+    /* Цвет ссылок */
+    --text-link: var(--link-color);
+    /* Цвет голосовых сообщений */
+    --background-secondary: var(--additional-color);
+    /* Цвет в закрепах и тд */
+    --background-primary: var(--main-color);
+    /* Цвет бейджей важных сообщений */
+    --status-danger: #3d78c4;
+    /* Цвет экрана выбора демки */
+    --modal-background: var(--main-color);
+    --modal-footer-background: var(--additional-color);
 }
 
 :root {
-	/* Цвет загрузки демок и прочего */
-	--primary-700: var(--additional-color);
-	/* Цвет в контекстном меню при наведении */
-	--brand-experiment-560: var(--hover-color);
-	/* Цвет текста при хорошем сигнале */
-	--text-positive: var(--text-link);
-	/* Цвет контекстного меню выбора региона звонка */
-	--primary-630: var(--additional-color);
-	--background-modifier-hover: var(--hover-color);
-	--background-primary: var(--main-color);
-	/* Кнопка В эфире */
-	--red-400: #263341;
-	/* Выбранное разрешение и фпс демки */
-	--brand-experiment: var(--hover-color);
-	/* Серые цвета кнопок */
-	--button-secondary-background: #273039;
-	--button-secondary-background-hover: var(--hover-color);
-	/* Цвет хедеров плагинов */
-	--background-secondary-alt: var(--hover-color);
+    /* Цвет загрузки демок и прочего */
+    --primary-700: var(--additional-color);
+    /* Цвет в контекстном меню при наведении */
+    --brand-experiment-560: var(--hover-color);
+    /* Цвет текста при хорошем сигнале */
+    --text-positive: var(--text-link);
+    /* Цвет контекстного меню выбора региона звонка */
+    --primary-630: var(--additional-color);
+    --background-modifier-hover: var(--hover-color);
+    --background-primary: var(--main-color);
+    /* Кнопка В эфире */
+    --red-400: #263341;
+    /* Выбранное разрешение и фпс демки */
+    --brand-experiment: var(--hover-color);
+    /* Серые цвета кнопок */
+    --button-secondary-background: #273039;
+    --button-secondary-background-hover: var(--hover-color);
+    /* Цвет хедеров плагинов */
+    --background-secondary-alt: var(--hover-color);
 }
 
 /* Сверху цвет надписи Discord */
 .wordmarkWindows-2dq6rw {
-	color: var(--text-link);
+    color: var(--text-link);
 }
 
 /* Цвет контекстного меню выбора региона звонка при наведении */
 .theme-dark .quickSelectPopoutOption-2E2UmS:hover {
-	background-color: var(--hover-color);
+    background-color: var(--hover-color);
 }
 
 .quickSelectPopoutOption-2E2UmS:focus {
-	background-color: transparent;
+    background-color: transparent;
 }
 
 /* Реклама нитро при выборе качества демки */
 .gradientBackground-MytxDL {
-	display: none;
+    display: none;
 }
 
 /* Иллюстрация при включении демки */
 .art-1TvEXv,
 .modalCloseButton-3jqiBN {
-	display: none;
+    display: none;
 }
 
 /* Зеленый индикатор демки рабочего стола */
 .icon-39rdLt {
-	background-color: var(--hover-color) !important;
+    background-color: var(--hover-color) !important;
+}
+
+/* Нижняя панель где ава, статус, муты микро */
+.container-1CH86i,
+.container-2NLBJg,
+.panel-ufc1-o {
+    background-color: var(--main-color) !important;
 }
