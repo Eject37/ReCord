@@ -1,4 +1,4 @@
-//META{"name":"ReCord","description":"Eject theme","author":"@eject37","version":"1.1"}*//
+//META{"name":"ReCord","description":"Eject theme","author":"@eject37","version":"1.2"}*//
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
@@ -17,15 +17,25 @@ button[aria-label="Начать активность"],
 button[aria-label="Камера недоступна"],
 button[aria-label="Шумоподавление с помощью Krisp"],
 [role="button"][aria-label="Показать профиль пользователя (недоступно)"],
+[role="button"][aria-label="Показать профиль пользователя"],
 [role="button"][aria-label="Почта"],
 [role="button"][aria-label="Помощь"],
 div:has(> button[aria-label="Открыть звуковую панель"]),
 div:has(> span[class*="disabledButtonWrapper-1m0hYZ"]),
-[role="button"][aria-label="Начать видеозвонок"] {
+[role="button"][aria-label="Начать видеозвонок"],
+button[aria-label="Розпочати дію"],
+button[aria-label="Поглинання шуму від Krisp"],
+[role="button"][aria-label="Показати профіль користувача (недоступно)"],
+[role="button"][aria-label="Показати профіль користувача"],
+[role="button"][aria-label="Вхідні"],
+[role="button"][aria-label="Довідка"],
+div:has(> button[aria-label="Відкрити звукову панель"]),
+[role="button"][aria-label="Розпочати відеовиклик"] {
     display: none;
 }
 
-button[aria-label="Продемонстрируйте свой экран"] {
+button[aria-label="Продемонстрируйте свой экран"],
+button[aria-label="Почати демонстрацію екрану"] {
     background: var(--button-color);
 }
 
@@ -274,6 +284,11 @@ button[aria-label="Прекратить просмотр"],
     /* Цвет экрана выбора демки */
     --modal-background: var(--main-color);
     --modal-footer-background: var(--additional-color);
+    /* Задний цвет выбранного канала на сервере */
+    --background-modifier-selected: var(--hover-color);
+    --background-modifier-active: var(--hover-color);
+    /* Кнопка Добавить в друзья на главном экране */
+    --status-positive-background: var(--hover-color);
 }
 
 :root {
@@ -296,6 +311,12 @@ button[aria-label="Прекратить просмотр"],
     --button-secondary-background-hover: var(--hover-color);
     /* Цвет хедеров плагинов */
     --background-secondary-alt: var(--hover-color);
+    /* Цвета кнопок удалить сообщения */
+    --red-430: var(--hover-color);
+    --red-500: var(--brand-600);
+    --red-530: var(--brand-600);
+    /* Задний цвет сообщения в модальном окне удаления сообщений */
+    --primary-600: var(--additional-color);
 }
 
 /* Сверху цвет надписи Discord */
@@ -333,4 +354,14 @@ button[aria-label="Прекратить просмотр"],
 .container-2NLBJg,
 .panel-ufc1-o {
     background-color: var(--main-color) !important;
+}
+
+/* Анимация при наведении на каналы на серверах */
+.link-1_kTxV {
+    transition: background-color 0.4s;
+}
+
+/* Выделение текста */
+::selection {
+    background: var(--hover-color) !important;
 }
